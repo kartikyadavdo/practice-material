@@ -16,11 +16,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSelectModule } from '@angular/material/select';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import { CrudConfigComponent } from './crud-config/crud-config.component'
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { CrudConfigComponent } from './crud-config/crud-config.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
-  declarations: [AppComponent, CrudCountryComponent, CrudDialogComponent, CrudConfigComponent],
+  declarations: [
+    AppComponent,
+    CrudCountryComponent,
+    CrudDialogComponent,
+    CrudConfigComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,7 +42,10 @@ import { CrudConfigComponent } from './crud-config/crud-config.component'
     ReactiveFormsModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatSelectModule,MatProgressSpinnerModule
+    MatSelectModule,
+    MatProgressSpinnerModule,
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent],
